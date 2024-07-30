@@ -1,5 +1,5 @@
 // import java.util.Scanner;
-
+import java.util.*;
 public class Array {
     public static void main(String[] args) {
         String[] planets = new String[8];
@@ -82,13 +82,128 @@ public class Array {
         // numbers[numbers.length-1] = null;
 
 
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.print(numbers[i] + " ");
-        }
+        // for (int i = 0; i < numbers.length; i++) {
+        //     System.out.print(numbers[i] + " ");
+        // }
         // Printing the values
         // for (int i = 0; i < planets.length; i++) {
         // System.out.print(planets[i] + " ");
         // }
 
+
+        // Dynamic Array 
+        List<String> planet = new ArrayList<>();
+        planet.add("Mercury");
+        planet.add("Venus");
+        planet.add("Earth");
+        planet.add("Mars");
+        planet.add("Jupitar");
+        planet.add("Saturn");
+        System.out.println(planet);
+
+        // Insertion at beginning 
+        planet.add(0,"Suresh");
+        
+        // Deletion 
+        planet.remove(3);
+
+
+
+
+
+
+
+
+
+    }
+    
+    // Implementation of dynamic array it means how dynamic array works 
+
+    public class DynamicArray{
+        private int[] array;
+        private int size;
+        private int capacity;
+
+
+        // Constructs a new dynamic array with the given initial capacity 
+        public DynamicArray(int capacity){
+            this.array = new int[capacity];
+            this.size = 0;
+            this.capacity = capacity;
+        }
+
+        // Returns the value at the given index in the dynamic array 
+        public int get(int index){
+            if(index < 0 || index >= size){
+                throw new IndexOutOfBoundsException();
+            }
+            return array[index];
+        }
+
+        // Sets the value at the given index in the dynamic array to the given value 
+        public void set(int index, int value)
+        {
+            if(index < 0 || index >= size)
+            {
+                throw new IndexOutOfBoundsException();
+            }
+            array[index] = value;
+        }
+
+        // Adding a new value at the end of the dynamic array 
+        public void add(int value)
+        {
+            if(size == capacity){
+                resize(capacity*2);
+            }
+            array[size++] = value;
+        }
+        private void resize(int newCapacity){
+            int[] newArray = new int[newCapacity];
+            System.arraycopy(array, 0, newArray, 0, size);
+            array = newArray;
+            capacity = newCapacity;
+        }
+
+
+        // Adding a new value at the specified index in the dynamic array 
+        public void add(int index, int value)
+        {
+            if(index < 0 || index > size)
+            {
+                throw new IndexOutOfBoundsException();
+            }
+            if(size == capacity){
+                resize(capacity*2);
+            }
+            // Moving all the elements to one position right from specified position 
+            System.arraycopy(array, index, array, index+1, size-index);
+            array[index] = value;
+            size++;
+        }
+
+        // Removing the value at the given index from the dynamic array 
+        public void remove(int index)
+        {
+            if(index < 0 || index >= size)
+            {
+                throw new IndexOutOfBoundsException();
+            }
+            System.arraycopy(array, index+1, array, index, size-index-1);
+            size--;
+            if(size < capacity / 2 && capacity > 1)
+            {
+                resize(capacity/2);
+            }
+        }
+  
+        // Returns the current size of the dynamic array 
+        public int size()
+        {
+            return size;
+        }
     }
 }
+
+
+// System.arraycopy(array,0,newArray,0,size )
