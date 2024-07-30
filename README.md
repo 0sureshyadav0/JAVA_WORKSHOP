@@ -2,7 +2,7 @@
 Creating a repository to learn java from beginning to advance along with Data Structures and Algorithms
 
 ## JAVA_FULL_STACK_ROADMAP
-  > BACKEND Engineering
+> BACKEND Engineering
 - Basics [Core JAVA Complete]
 - OOPS, Collection Framework, Exception Handling
 - J2EE / Jakarta EE - JDBC, Servlet, JSP, Projects
@@ -10,7 +10,7 @@ Creating a repository to learn java from beginning to advance along with Data St
 - Spring Boot REST API projects [OOPS, Collection Framework]
 - Spring Boot with DATA-base connecivity JPA/Hibernate
 - Spring Security 6 with Spring Boot
-  > FRONTEND Engineering
+> FRONTEND Engineering
 - HTML, CSS, JS, Thymleaf, Bootstrap
 - SPRING MVC with Project [Blogs with ADMIN] [YouTube Scrapper]
 - Tailwind CSS with projects
