@@ -1,4 +1,4 @@
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class Array {
     public static void main(String[] args) {
@@ -65,20 +65,20 @@ public class Array {
 
         // Removing duplicates
         // Not working
-        int count = 0;
-        for (int i = 0; i < numbers.length-1; i++) {
+        // int count = 0;
+        // for (int i = 0; i < numbers.length-1; i++) {
         //    System.out.println("Outer loop runs: "+count++);
-                if (numbers[i] == numbers[i+1]) {
+                // if (numbers[i] == numbers[i+1]) {
 
-                   for(int j=i; j<numbers.length-1; j++){
+                //    for(int j=i; j<numbers.length-1; j++){
                     // System.out.println("Before " + numbers[j]+ " at index "+j);
                     //         numbers[j] = numbers[j+1];
                     // System.out.println("After " + numbers[j]+ " at index " +(j));
-System.out.println(numbers[j]);
-                   }
-                }
+                    // System.out.println(numbers[j]);
+                //    }
+                // }
             
-        }
+        // }
         // numbers[numbers.length-1] = null;
 
 
