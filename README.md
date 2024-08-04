@@ -906,3 +906,18 @@ public class BankingApp {
       - Property listing and search functionality
       - Client management and appointment scheduling
       - Analytics on property views and client inquiries
+
+# Project Guidlines
+- Requirements Gathering: Start by defining the requirements and scope of each project. Understand the needs and create a plan for implementation.
+
+- Design and Architecture: Design the system architecture, including the database schema, application structure, and interactions between components.
+
+- Development: Implement the project using appropriate technologies and best practices. Write clean and maintainable code.
+
+- Testing: Test the application thoroughly to ensure all features work as expected and fix any bugs or issues.
+
+- Deployment: Deploy the application to a server or cloud service and ensure it is accessible and functional.
+
+- Documentation: Create comprehensive documentation for the project, including setup instructions, usage guidelines, and API references.
+
+- Presentation: Prepare a presentation or demo of the project, highlighting key features and functionalities.
