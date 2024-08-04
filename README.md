@@ -301,3 +301,285 @@ Week 24: Design Patterns and Best Practices
 - Day 167-168: Design Patterns (Singleton, Factory, Observer)
 - Day 169: API Design Principles (REST, Swagger/OpenAPI)
 - Day 170: Agile Methodologies (Scrum, Kanban)
+
+
+### Assignment 1: Simple Calculator
+Week 1:
+- Objective: Create a console-based calculator that performs basic arithmetic operations
+- Instructin:
+  1. Implement a program that accepts two numbers and an operator + - / * from the user.
+  2. Based on the operator, perform the corresponding arithmetic operation and display the result.
+Code
+```
+import java.util.Scanner;
+
+public class Calculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        double num1 = scanner.nextDouble();
+
+        System.out.print("Enter second number: ");
+        double num2 = scanner.nextDouble();
+
+        System.out.print("Enter operator (+, -, *, /): ");
+        char operator = scanner.next().charAt(0);
+
+        double result;
+        switch (operator) {
+            case '+':
+                result = num1 + num2;
+                break;
+            case '-':
+                result = num1 - num2;
+                break;
+            case '*':
+                result = num1 * num2;
+                break;
+            case '/':
+                result = num1 / num2;
+                break;
+            default:
+                System.out.println("Error! Operator is not correct");
+                return;
+        }
+        System.out.println("Result: " + result);
+    }
+}
+```
+
+### Assignment 2: Bank Account System
+Week 2:
+- Objective: Develop a simple bank account system with basic operations.
+- Instructions:
+  1. Create a 'BandAccount' class with attributes like account, number, account holder name and balance.
+  2. Implement methods to deposit, withdraw, and check the balance.
+  3. Test the class by creating an object and performing trancactions.
+Code
+```
+public class BankAccount {
+    private String accountNumber;
+    private String accountHolderName;
+    private double balance;
+
+    public BankAccount(String accountNumber, String accountHolderName, double initialBalance) {
+        this.accountNumber = accountNumber;
+        this.accountHolderName = accountHolderName;
+        this.balance = initialBalance;
+    }
+
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+            System.out.println("Deposited: " + amount);
+        } else {
+            System.out.println("Deposit amount must be positive.");
+        }
+    }
+
+    public void withdraw(double amount) {
+        if (amount > 0 && amount <= balance) {
+            balance -= amount;
+            System.out.println("Withdrew: " + amount);
+        } else {
+            System.out.println("Insufficient funds or invalid amount.");
+        }
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public static void main(String[] args) {
+        BankAccount account = new BankAccount("123456", "John Doe", 1000.00);
+        account.deposit(500);
+        account.withdraw(200);
+        System.out.println("Current Balance: " + account.getBalance());
+    }
+}
+```
+
+### Assignment 3: Simple Servlet-Based Web Application
+Week 6:
+- Objective: Create a basic web application using Servlets
+- Instructions:
+  1. Develop a servlet that processor user input and displays a greeting message.
+  2. Configure the servlet in 'web.xml'
+  3. Create a JSP page to interact with the servlets.
+ 
+ Code
+- Servlet Code ('GreetingServlet.java')
+ ```
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/greeting")
+public class GreetingServlet extends HttpServlet {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String name = request.getParameter("name");
+        response.setContentType("text/html");
+        response.getWriter().println("<h1>Hello, " + name + "!</h1>");
+    }
+}
+```
+- JSP Page ('greeting.jsp')
+```
+<!DOCTYPE html>
+<html>
+<body>
+    <form action="greeting" method="get">
+        Name: <input type="text" name="name">
+        <input type="submit" value="Greet">
+    </form>
+</body>
+</html>
+```
+
+### Assignment 4:
+Week 7:
+- Objective: Develop a simple user registration form using JSF.
+- Instructions:
+  1. Create a managed bean to handle form data.
+  2. Implement a JSF form to capture user details.
+  3. Display a confirmation message upon form submission.
+ 
+Code
+- Managed Bean ('UserBean.java')
+```
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
+
+@ManagedBean
+@RequestScoped
+public class UserBean {
+    private String name;
+    private String email;
+
+    // Getters and Setters
+
+    public String submit() {
+        return "confirmation";
+    }
+}
+```
+- JSF Page ('registration.xhtml')
+```
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+    <title>Registration Form</title>
+</h:head>
+<h:body>
+    <h:form>
+        <h:outputLabel for="name" value="Name:" />
+        <h:inputText id="name" value="#{userBean.name}" />
+        <h:outputLabel for="email" value="Email:" />
+        <h:inputText id="email" value="#{userBean.email}" />
+        <h:commandButton value="Submit" action="#{userBean.submit}" />
+    </h:form>
+</h:body>
+</html>
+```
+
+### Assignment 5: Personal Portfolio Web Page
+Week 11:
+- Objective: Create a personal portfolio web page using HTML and CSS.
+- Instructions:
+  1. Design a webpage that includes sections for an introduction, projects and contact information.
+  2. Style the page using CSS to ensure a professional apperance.
+ 
+Code
+- HTML Code ('index.html')
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>John Doe</h1>
+        <p>Web Developer</p>
+    </header>
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Project 1</li>
+            <li>Project 2</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: john@example.com</p>
+    </section>
+</body>
+</html>
+```
+- CSS ('style.css')
+```
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+section {
+    padding: 20px;
+}
+```
+
+### Assignment 6: Interative To-Do List
+Week 12:
+- Objective: Create an interactive to-do list using JavaScript
+- Instructions:
+  1. Develop a webpage where users can add, delete and mark items as completed.
+  2. Use JavaScript to handle user interactions and update the DOM.
+ 
+Code
+- HTML Code ('todo.html')
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+    <script src="todo.js" defer></script>
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <input type="text" id="new-task" placeholder="Add a new task">
+    <button onclick="addTask()">Add</button>
+    <ul id="task-list"></ul>
+</body>
+</html>
+```
+- JavaScript Code ('todo.ja')
+```
+function addTask() {
+    const taskInput = document.getElementById('new-task');
+    const taskText = taskInput.value;
+    if (taskText === '') return;
+
+    const taskList = document.getElementById('task-list');
+    const taskItem = document.createElement('li');
+    taskItem.textContent = taskText;
+    taskItem.onclick = function() {
+        taskItem.classList.toggle('completed');
+    };
+    taskList.appendChild(taskItem);
+    taskInput.value = '';
+}
+```
+
+###
