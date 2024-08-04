@@ -1,3 +1,5 @@
+package SourceCode;
+
 public class BinarySearch {
     public static void main(String[] args) {
         int[] arr = { 5, 7, 6, 8, 3 };

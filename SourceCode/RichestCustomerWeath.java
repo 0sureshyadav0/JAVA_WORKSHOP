@@ -1,3 +1,4 @@
+package SourceCode;
 import java.util.ArrayList;
 
 public class RichestCustomerWeath {

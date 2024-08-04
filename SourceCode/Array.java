@@ -1,3 +1,4 @@
+package SourceCode;
 // import java.util.Scanner;
 import java.util.*;
 public class Array {

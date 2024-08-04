@@ -1,3 +1,4 @@
+package SourceCode;
 import java.util.Scanner;
 class firstProgram{
     public static void main(String[] args)
