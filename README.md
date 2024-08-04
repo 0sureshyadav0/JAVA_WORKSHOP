@@ -32,6 +32,7 @@ Week 1: Basic Syntax and Data Types
   > Assignment: Write a simple Java program (e.g Hello World)
 - Day 3-4: Variables, Data Types, Operators
   > Practice Questions: Data types, operators and basic calculations
+  
   > Assignment: Create a calculator program
 - Day 5-6: Control Flow Statements (if, switch)
   > Practice Questions: Conditional statements exercises
