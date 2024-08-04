@@ -800,3 +800,109 @@ public class BankingApp {
     }
 }
 ```
+# Project Works
+## Core Java Projects
+1. Personal Budget Tracker
+   - Objective: Create a console application to track personal expenses and income.
+   - Features:
+     - Add, edit and delete transactions
+     - View transaction history by category
+     - Calculate total expenses, income and balance
+2. Simple Banking Application
+   - Objective: Develop a banking application with multiple account management.
+   - Features:
+     - Create multiple bank accounts
+     - Deposit, withdraw and transfer funds between accounts
+     - View account details and transaction history
+## Java Enterprise Edition (Java EE) Projects
+3. Online Library System
+   - Objective: Develop a web-based library system for searching and managing books.
+   - Features:
+     - User authentication and registration
+     - Book search and filter functionality
+     - Admin panel to add, update, and delete books
+     - Book borrowing and returning system
+4. E-Commerce Application
+   - Objective: Build an e-commerce platform with product listings and shopping cart functionality.
+   - Features:
+     - User registration and login
+     - Product catalog with search and filter options
+     - Shopping cart for managing items
+     - Checkout process with order confirmation
+## Front-End Development Projects
+5. Personal Portfolio Website
+   - Objective: Create a personal protfolio website to showcase skills and projects
+   - Features:
+     - Sections for introduction, projects and contact information
+     - Responsive design for different devices
+     - Interactive elements using JavaScript
+6. Interactive To-Do list
+   - Objective: Develop a web-based to-do list application with interactive features
+   - Features:
+     - Add, edit and delete tasks
+     - Mark tasks as completed
+     - Filter tasks by status (all, active, completed)
+## Database and SQL Projects
+7. Employee Management System
+   - Objective: Implement an SQL database for managing employee records.
+   - Features:
+     - CRUD operations for employee records
+     - Generate reports on employee salaries and positions
+     - Search and filter employees based on various criteria
+8. Inventory Management System
+   - Objective: Create a database system to manage inventory for a retail store.
+   - Features:
+     - Track product inventory levels
+     - Update inventory with new stock
+     - Generate low-stock alerts and reorder reports
+## Spring Framework Projects
+9. Spring Boot RESTful API
+    - Objective: Develop a RESTful API using Spring Boot for managing resources
+    - Features:
+      - Implement CURD operations for a resource (e.g products,users)
+      - Integrate with a relational database using JPA/Hibernate
+      - Handle API authentication and authorization
+10. Task Management System
+    - Objective: Build a task management application with Spring Boot and Thymeleaf
+    - Features:
+      - User authentication and role-based access
+      - Create, assign, and track tasks
+      - View task status and history
+## Microservices Projects
+11. Microservices-Based Online Store
+    - Objective: Implement a microservices architecture for an online store
+    - Features:
+      - Separate services for user management, product catalog and order processing
+      - Service discovery and communication using Spring Cloud
+      - Centralized configuration management and fault tolerance
+12. Multi-Service Blog Platform
+    - Objective: Create a blog platform with multiple microservices handling different functionalities
+    - Features:
+      - Microservices for user profiles, blog posts, comments and notifcitions
+      - API gateway for routing requests to appropriate services
+      - Implement inter-service communication and data synchronization
+## Real-Life Scenarios
+13. Customer Relationship Management (CRM) System
+    - Objective: Develop a CRM system to manage customer interactions and data
+    - Features:
+      - Track customer information and interaction history
+      - Manage customer support tickets and feedback
+      - Generate reports on customer activity and satisfaction
+14. Project Management Tool
+    - Objective: Build a tool to manage projects, tasks and team collaboration
+    - Features:
+      - Create and manage projects and tasks
+      - Assign tasks to team members and track progress
+      - Integrate with a calendar for scheduling and deadlines
+15. Social Media Platform
+    - Objective: Develop a social media application with features similar to popular platforms
+    - Features:
+      - User profiles and connections
+      - Post creation, commenting and liking
+      - Notifications and messaging system
+16. Real Estate Management System
+    - Objective: Create a system to manage real estate properties and client interactions
+    - Features:
+      - Property listing and search functionality
+      - Client management and appointment scheduling
+      - Analytics on property views and client inquiries
