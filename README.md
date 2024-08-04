@@ -29,7 +29,7 @@ Creating a repository to learn java from beginning to advance along with Data St
 ## Core JAVA: 30 Days
 Week 1: Basic Syntax and Data Types
 - Day 1-2: Introduction to Java, Setup, IDEs, Basic Syntax
-  > Assignment: Write a simple Java program (e.g Hello World)
+> Assignment: Write a simple Java program (e.g Hello World)
 - Day 3-4: Variables, Data Types, Operators
 - Day 5-6: Control Flow Statements (if, switch)
 - Day 7: Loops (for, while, do-while)
