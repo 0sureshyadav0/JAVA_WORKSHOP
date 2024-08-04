@@ -310,7 +310,7 @@ Week 1:
   1. Implement a program that accepts two numbers and an operator + - / * from the user.
   2. Based on the operator, perform the corresponding arithmetic operation and display the result.
 Code
-```
+```java
 import java.util.Scanner;
 
 public class Calculator {
@@ -357,7 +357,7 @@ Week 2:
   2. Implement methods to deposit, withdraw, and check the balance.
   3. Test the class by creating an object and performing trancactions.
 Code
-```
+```java
 public class BankAccount {
     private String accountNumber;
     private String accountHolderName;
@@ -410,7 +410,7 @@ Week 6:
  
  Code
 - Servlet Code ('GreetingServlet.java')
- ```
+ ```java
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -428,7 +428,7 @@ public class GreetingServlet extends HttpServlet {
 }
 ```
 - JSP Page ('greeting.jsp')
-```
+```jsp
 <!DOCTYPE html>
 <html>
 <body>
@@ -450,7 +450,7 @@ Week 7:
  
 Code
 - Managed Bean ('UserBean.java')
-```
+```java
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 
@@ -468,7 +468,7 @@ public class UserBean {
 }
 ```
 - JSF Page ('registration.xhtml')
-```
+```xhtml
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html">
@@ -496,7 +496,7 @@ Week 11:
  
 Code
 - HTML Code ('index.html')
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -523,7 +523,7 @@ Code
 </html>
 ```
 - CSS ('style.css')
-```
+```css
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -549,7 +549,7 @@ Week 12:
  
 Code
 - HTML Code ('todo.html')
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -564,8 +564,8 @@ Code
 </body>
 </html>
 ```
-- JavaScript Code ('todo.ja')
-```
+- JavaScript Code ('todo.js')
+```javascript
 function addTask() {
     const taskInput = document.getElementById('new-task');
     const taskText = taskInput.value;
