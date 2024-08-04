@@ -9,7 +9,8 @@ public class BinarySearch {
         for (int elements : arr) {
             System.out.println(elements);
         }
-        System.out.println("Element found at index: "+result);
+        System.out.println("Element found at index: "+ result);
+        System.out.println("Done");
     }
 
     static void sort(int[] arr) {
