@@ -582,4 +582,221 @@ function addTask() {
 }
 ```
 
-###
+### Assignment 7: Employee Management System
+Week 13:
+- Objective: Develop SQL queries to manage employee data in a database.
+- Instructions:
+  1. Create a database scheme for employees with fields like 'id', 'name', 'position' and 'salary'.
+  2. Wrie SQL queries to:
+     - Insert new employee records
+     - Update employee salaries
+     - Retrieve employees with a specific position
+     - Delete employee records based on conditions
+```sql
+-- Create Employee Table
+CREATE TABLE Employee (
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    position VARCHAR(50),
+    salary DECIMAL(10, 2)
+);
+
+-- Insert Records
+INSERT INTO Employee (id, name, position, salary) VALUES (1, 'Alice', 'Developer', 60000);
+INSERT INTO Employee (id, name, position, salary) VALUES (2, 'Bob', 'Manager', 80000);
+
+-- Update Salary
+UPDATE Employee SET salary = 65000 WHERE name = 'Alice';
+
+-- Retrieve Employees
+SELECT * FROM Employee WHERE position = 'Developer';
+
+-- Delete Record
+DELETE FROM Employee WHERE id = 2;
+```
+
+### Assignment 8: Spring Boot RESTful API
+Week 17:
+- Objective: Develop a simple RESTful API using Spring Boot
+- Instructions:
+  1. Create a Spring Boot application with a REST controller.
+  2. Implement endpoints to perform CRUD operations on a resource (e.g 'Product')
+ 
+Code
+- Spring Boot Application ('Application.java')
+```java
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Application {
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
+}
+```
+- REST Controller ('ProductController.java')
+```java
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@RestController
+@RequestMapping("/products")
+public class ProductController {
+
+    private List<Product> products = new ArrayList<>();
+
+    @GetMapping
+    public List<Product> getAllProducts() {
+        return products;
+    }
+
+    @PostMapping
+    public Product addProduct(@RequestBody Product product) {
+        products.add(product);
+        return product;
+    }
+}
+
+class Product {
+    private String name;
+    private double price;
+
+    // Getters and Setters
+}
+```
+
+### Assignment 9: Simple Microservice Architecture
+Week 19:
+- Objective: Implement a basic microservice architecture with Spring Boot.
+- Instructions:
+  1. Create two microservices: 'User Service' and 'Order Service'
+  2. Implement REST endpoints in both services and use Spring Cloud for service discovery.
+ 
+Code
+- User Service ('UserSerciceApplication.java')
+```java
+@SpringBootApplication
+@EnableDiscoveryClient
+public class UserServiceApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(UserServiceApplication.class, args);
+    }
+}
+
+@RestController
+@RequestMapping("/users")
+public class UserController {
+    @GetMapping("/{id}")
+    public String getUser(@PathVariable String id) {
+        return "User " + id;
+    }
+}
+```
+- Order Service ('OrderServiceApplication.java')
+```java
+@SpringBootApplication
+@EnableDiscoveryClient
+public class OrderServiceApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(OrderServiceApplication.class, args);
+    }
+}
+
+@RestController
+@RequestMapping("/orders")
+public class OrderController {
+    @GetMapping("/{id}")
+    public String getOrder(@PathVariable String id) {
+        return "Order " + id;
+    }
+}
+```
+
+### Assignment : Simple Banking Application
+- Objective: Develop a banking application with multiple account management.
+- Instructions:
+  1. Extend the 'BankAccount' class to support multiple accounts.
+  2. Implement an application to manage multiple accounts, including features to create accounts, view balances, and transfer funds between accounts.
+ 
+Code
+```java
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class BankingApp {
+    private static Map<String, BankAccount> accounts = new HashMap<>();
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("1. Create Account");
+            System.out.println("2. View Account");
+            System.out.println("3. Transfer Funds");
+            System.out.println("4. Exit");
+            System.out.print("Choose an option: ");
+            int choice = scanner.nextInt();
+
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter account number: ");
+                    String accountNumber = scanner.next();
+                    System.out.print("Enter account holder name: ");
+                    String holderName = scanner.next();
+                    System.out.print("Enter initial balance: ");
+                    double initialBalance = scanner.nextDouble();
+                    accounts.put(accountNumber, new BankAccount(accountNumber, holderName, initialBalance));
+                    System.out.println("Account created!");
+                    break;
+
+                case 2:
+                    System.out.print("Enter account number: ");
+                    accountNumber = scanner.next();
+                    BankAccount account = accounts.get(accountNumber);
+                    if (account != null) {
+                        System.out.println("Account Holder: " + account.accountHolderName);
+                        System.out.println("Balance: " + account.getBalance());
+                    } else {
+                        System.out.println("Account not found.");
+                    }
+                    break;
+
+                case 3:
+                    System.out.print("Enter source account number: ");
+                    String fromAccount = scanner.next();
+                    System.out.print("Enter target account number: ");
+                    String toAccount = scanner.next();
+                    System.out.print("Enter amount to transfer: ");
+                    double amount = scanner.nextDouble();
+
+                    BankAccount source = accounts.get(fromAccount);
+                    BankAccount target = accounts.get(toAccount);
+
+                    if (source != null && target != null && amount > 0 && amount <= source.getBalance()) {
+                        source.withdraw(amount);
+                        target.deposit(amount);
+                        System.out.println("Transfer successful!");
+                    } else {
+                        System.out.println("Invalid transfer.");
+                    }
+                    break;
+
+                case 4:
+                    return;
+
+                default:
+                    System.out.println("Invalid choice.");
+            }
+        }
+    }
+}
+```
