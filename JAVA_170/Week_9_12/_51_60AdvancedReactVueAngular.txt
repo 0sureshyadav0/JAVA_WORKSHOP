@@ -1,0 +1,3 @@
+Topics: Advanced React/Vue/Angular features
+Practice: Use advanced features of chosen frontend framework (e.g., hooks in React, Vuex in Vue, RxJS in Angular).
+Assignment: Enhance the frontend of your capstone project with advanced framework features.

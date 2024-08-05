@@ -1,0 +1,3 @@
+Topics: NoSQL databases, data caching
+Practice: Work with NoSQL databases (e.g., MongoDB) and implement data caching.
+Assignment: Integrate a NoSQL database into your full-stack application and optimize data access.

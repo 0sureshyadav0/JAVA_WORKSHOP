@@ -1,0 +1,3 @@
+Topics: Normalization, ER diagrams
+Practice: Design and normalize a database schema for a real-world application.
+Assignment: Create an ER diagram and normalized schema for an online store.

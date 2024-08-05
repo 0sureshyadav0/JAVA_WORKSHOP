@@ -1,0 +1,3 @@
+Topics: React components, state management
+Practice: Build a simple React component with state and props.
+Assignment: Create a React application to display a list of users.

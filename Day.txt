@@ -1,0 +1,160 @@
+Day 9: Collections Framework
+Topics: Lists, sets, maps, iterators
+Practice: Use ArrayList, HashSet, and HashMap to store and manipulate data.
+Assignment: Create a program to manage a contact list using different collection types.
+Day 10: Streams and File I/O
+Topics: File reading/writing, streams
+Practice: Read from and write to files using Java I/O classes.
+Assignment: Develop a file-based logging system.
+Week 3: Introduction to Web Development
+Day 11: Introduction to Web Technologies
+Topics: HTTP, HTML, CSS
+Practice: Create a basic HTML page and style it with CSS.
+Assignment: Build a static personal portfolio webpage.
+Day 12: JavaScript Basics
+Topics: JavaScript syntax, DOM manipulation
+Practice: Write scripts to manipulate HTML elements and handle user events.
+Assignment: Develop a simple interactive to-do list application.
+Day 13: Introduction to Web Servers and Servlets
+Topics: Servlet basics, handling HTTP requests
+Practice: Write a simple servlet to handle form submissions.
+Assignment: Build a servlet-based web application with a form to collect user data.
+Day 14: JSP Basics
+Topics: JavaServer Pages (JSP), JSP tags
+Practice: Create a JSP page to display dynamic content.
+Assignment: Develop a JSP page that integrates with a servlet to display user input.
+Day 15: Introduction to Spring Framework
+Topics: Spring Core, dependency injection
+Practice: Configure a simple Spring application using XML-based configuration.
+Assignment: Create a basic Spring application to manage a list of items.
+
+Week 4: Spring Framework and Java EE
+Day 16: Spring Boot Basics
+Topics: Spring Boot setup, auto-configuration
+Practice: Create a Spring Boot application with default configurations.
+Assignment: Build a RESTful service using Spring Boot.
+
+Day 17: Spring Data JPA
+Topics: Entity classes, repositories, CRUD operations
+Practice: Implement CRUD operations using Spring Data JPA.
+Assignment: Develop an application that interacts with a database using Spring Data JPA.
+
+Day 18: RESTful Web Services
+Topics: Building REST APIs with Spring Boot
+Practice: Create REST endpoints for basic CRUD operations.
+Assignment: Build a RESTful API for a book management system.
+
+Day 19: Introduction to Java EE
+Topics: EJBs, JPA, JavaServer Faces (JSF)
+Practice: Develop a simple Java EE application with EJB and JPA.
+Assignment: Create a Java EE application to manage customer orders.
+
+Day 20: Microservices Basics
+Topics: Microservices architecture, Spring Cloud
+Practice: Implement a basic microservice using Spring Boot.
+Assignment: Build a microservices-based application for managing products and orders.
+
+Week 5: Frontend Frameworks
+Day 21: Introduction to React
+Topics: React components, state management
+Practice: Build a simple React component with state and props.
+Assignment: Create a React application to display a list of users.
+
+Day 22: React Router and Forms
+Topics: React Router, form handling
+Practice: Implement routing in a React application.
+Assignment: Develop a React app with multiple pages and a form for user input.
+
+
+Day 23: Vue.js Basics
+Topics: Vue.js components, directives
+Practice: Build a simple Vue.js component.
+Assignment: Create a Vue.js application to manage a list of tasks.
+
+Day 24: Vue.js Router and Vuex
+Topics: Vue Router, Vuex for state management
+Practice: Implement routing and state management in a Vue.js application.
+Assignment: Develop a Vue.js application with state management and navigation.
+
+Day 25: Angular Basics
+Topics: Angular components, directives, services
+Practice: Create an Angular component and service.
+Assignment: Build an Angular application for managing products.
+
+Week 6: Database Management
+Day 26: SQL Basics
+Topics: SQL queries, joins, subqueries
+Practice: Write SQL queries to retrieve and manipulate data.
+Assignment: Create a SQL database schema for a library system and write queries for common operations.
+
+Day 27: Advanced SQL
+Topics: Aggregation functions, indexing, transactions
+Practice: Write complex queries involving aggregation and indexing.
+Assignment: Develop SQL queries to generate reports for an inventory management system.
+
+Day 28: Database Design
+Topics: Normalization, ER diagrams
+Practice: Design and normalize a database schema for a real-world application.
+Assignment: Create an ER diagram and normalized schema for an online store.
+
+Day 29: JDBC Basics
+Topics: JDBC setup, basic operations
+Practice: Write Java code to connect to a database and perform CRUD operations using JDBC.
+Assignment: Develop a Java application that interacts with a database using JDBC.
+
+Day 30: ORM with Hibernate
+Topics: Hibernate setup, entity mapping
+Practice: Configure Hibernate and map Java classes to database tables.
+Assignment: Create a Hibernate application for managing user records.
+
+Week 7: Integration and Deployment
+Day 31: Integrating Frontend and Backend
+Topics: Connecting frontend with backend APIs
+Practice: Use fetch or axios to call REST APIs from the frontend.
+Assignment: Develop a full-stack application where the frontend interacts with a backend API.
+
+Day 32: Introduction to Docker
+Topics: Docker basics, containerization
+Practice: Containerize a simple Java application using Docker.
+Assignment: Create a Dockerfile for a Java application and run it in a Docker container.
+
+Day 33: Continuous Integration/Continuous Deployment (CI/CD)
+Topics: CI/CD concepts, tools (e.g., Jenkins, GitHub Actions)
+Practice: Set up a basic CI/CD pipeline for a Java application.
+Assignment: Configure a CI/CD pipeline to automate the build and deployment of a Java application.
+
+Day 34: Cloud Deployment
+Topics: Deploying applications to cloud platforms (e.g., AWS, Azure)
+Practice: Deploy a Java application to a cloud service.
+Assignment: Set up a cloud-based deployment for a full-stack application.
+
+Day 35: Security Best Practices
+Topics: Security principles, authentication, and authorization
+Practice: Implement basic authentication and authorization in a web application.
+Assignment: Develop a secure web application with user login and role-based access control.
+
+Week 8: Project Work and Review
+Day 36-40: Capstone Project
+Objective: Integrate all the learned skills into a comprehensive full-stack application.
+Project: Develop a complete full-stack application (e.g., e-commerce platform, blog system) with frontend, backend, database, and deployment.
+
+Week 9-12: Advanced Topics and Real-Life Scenarios
+Day 41-50: Advanced Spring and Microservices
+Topics: Spring Security, Spring Cloud, microservices architecture
+Practice: Implement advanced features and patterns in Spring applications.
+Assignment: Create a microservices-based application with service discovery and centralized configuration.
+
+Day 51-60: Advanced Frontend Frameworks
+Topics: Advanced React/Vue/Angular features
+Practice: Use advanced features of chosen frontend framework (e.g., hooks in React, Vuex in Vue, RxJS in Angular).
+Assignment: Enhance the frontend of your capstone project with advanced framework features.
+
+Day 61-70: Advanced Database and Data Management
+Topics: NoSQL databases, data caching
+Practice: Work with NoSQL databases (e.g., MongoDB) and implement data caching.
+Assignment: Integrate a NoSQL database into your full-stack application and optimize data access.
+
+Day 71-80: Performance Optimization and Testing
+Topics: Performance optimization, testing strategies
+Practice: Optimize application performance and write tests (unit, integration, end-to-end).
+Assignment: Implement performance optimizations and comprehensive tests for your capstone project.

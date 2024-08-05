@@ -1,0 +1,3 @@
+Topics: React Router, form handling
+Practice: Implement routing in a React application.
+Assignment: Develop a React app with multiple pages and a form for user input.

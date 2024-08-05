@@ -1,0 +1,3 @@
+Topics: Performance optimization, testing strategies
+Practice: Optimize application performance and write tests (unit, integration, end-to-end).
+Assignment: Implement performance optimizations and comprehensive tests for your capstone project.

@@ -1,0 +1,3 @@
+-- Topics: Aggregation functions, indexing, transactions
+-- Practice: Write complex queries involving aggregation and indexing.
+-- Assignment: Develop SQL queries to generate reports for an inventory management system.

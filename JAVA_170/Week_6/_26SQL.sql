@@ -1,0 +1,3 @@
+-- Topics: SQL queries, joins, subqueries
+-- Practice: Write SQL queries to retrieve and manipulate data.
+-- Assignment: Create a SQL database schema for a library system and write queries for common operations.
