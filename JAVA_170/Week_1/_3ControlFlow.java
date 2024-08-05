@@ -3,8 +3,6 @@ import java.util.Scanner;
 // Topic: if-else, switch-case, loops(for, while, do-while)
 // Practice: Implement control flow in a number guessing game
 // Assignment: 
-// 4. Implement a program that prints the numbers from 1 to 100 using a for loop. Modify the program to print only even numbers.
-// 5. Write a Java program using a while loop to calculate the factorial of a given number.
 // 6. Create a do-while loop that continues to prompt the user for input until they enter a valid integer.
 // 7. Develop a Java program that uses the break statement to exit from a loop when a specific condition is met.
 // 8. Write a program that uses the continue statement to skip over odd numbers in a loop and print only even numbers.
@@ -18,6 +16,8 @@ public class _3ControlFlow {
         String output = checkPositiveNegative(number);
         System.out.println(output);
         System.out.println(day(number));
+        seriesNumber();
+        factorial(number);
     }
 
 // 1. Write a program that checks if a number is prime or composite
@@ -61,5 +61,23 @@ public class _3ControlFlow {
             case 7: return "Saturday";
         }
         return "Invalid";
+    }
+// 4. Implement a program that prints the numbers from 1 to 100 using a for loop. Modify the program to print only even numbers.
+    public static void seriesNumber(){
+        for(int i=1; i<=100; i++){
+            if(i % 2 == 0){
+                System.out.println(i);
+            }
+        }
+    }
+// 5. Write a Java program using a while loop to calculate the factorial of a given number.
+    public static void factorial(int number){
+        int sum=1;
+        int i=1;
+        while(number >= i){
+           sum += sum * i;
+           i++;
+        }
+        System.out.println(sum);
     }
 }
