@@ -921,3 +921,71 @@ public class BankingApp {
 - Documentation: Create comprehensive documentation for the project, including setup instructions, usage guidelines, and API references.
 
 - Presentation: Prepare a presentation or demo of the project, highlighting key features and functionalities.
+
+
+
+  Frontend Practice and Assignment Questions
+HTML/CSS
+Practice Questions:
+
+Create a responsive web page layout with a header, footer, and a content section.
+Design a form with various input types (text, email, password, checkbox, radio buttons) and style it using CSS.
+Implement a grid layout using CSS Grid and Flexbox to display a set of items.
+Assignments:
+
+Portfolio Website: Build a personal portfolio website to showcase your projects and skills. Include sections like About Me, Projects, and Contact. Use responsive design principles to ensure it looks good on all devices.
+Landing Page: Design a landing page for a fictional product or service. Include a hero section, features, testimonials, and a call-to-action button.
+JavaScript
+Practice Questions:
+
+Write a JavaScript function that validates an email address.
+Implement a JavaScript function to toggle the visibility of a menu on button click.
+Create a JavaScript function that calculates the factorial of a number.
+Assignments:
+
+To-Do List Application: Build a to-do list application where users can add, edit, and delete tasks. Include functionality to mark tasks as completed and filter tasks by their status.
+Interactive Quiz: Develop an interactive quiz application where users can answer multiple-choice questions and get a score at the end.
+Frontend Frameworks (React/Vue/Angular)
+Practice Questions:
+
+Create a simple component that displays a list of items and handles item clicks.
+Implement state management to handle form input values and submission.
+Build a reusable component with props and events.
+Assignments:
+
+Weather App: Build a weather application using React/Vue/Angular that fetches and displays weather data from an API based on the user's location.
+Blog Platform: Create a blog platform where users can view, create, and edit blog posts. Implement routing to navigate between different pages (e.g., home, post details, and new post).
+Database Practice and Assignment Questions
+SQL
+Practice Questions:
+
+Write a SQL query to retrieve all records from a table where a specific column meets a condition.
+Create a SQL query to join two tables on a common column and display selected fields.
+Write a SQL query to aggregate data using functions like COUNT, AVG, SUM, etc.
+Assignments:
+
+Employee Management System: Design and implement a database schema for managing employee data. Write SQL queries to insert, update, delete, and retrieve employee records. Generate reports based on employee salaries and positions.
+Inventory Management System: Create a database schema for managing product inventory. Write SQL queries to track inventory levels, update stock, and generate low-stock alerts.
+Database Design
+Practice Questions:
+
+Design a database schema for a library system including tables for books, authors, and borrowers.
+Create an Entity-Relationship Diagram (ERD) for a social media platform with users, posts, and comments.
+Normalize a given database schema to reduce redundancy and improve data integrity.
+Assignments:
+
+Library Management System: Design and implement a relational database for managing a library. Include features for tracking book loans, managing library members, and cataloging books.
+Online Store Database: Create a database schema for an e-commerce platform. Include tables for products, orders, customers, and payments. Implement SQL queries to handle various transactions and reports.
+Database with Java (JDBC/ORM)
+Practice Questions:
+
+Write a Java program using JDBC to connect to a database and execute a SELECT query.
+Implement a Java program to insert, update, and delete records in a database table using JDBC.
+Use an ORM framework like Hibernate to map a Java class to a database table and perform CRUD operations.
+Assignments:
+
+JDBC CRUD Operations: Develop a Java application that performs CRUD operations on a database using JDBC. Create a user interface to manage data (e.g., employee records, product inventory).
+Hibernate Application: Build a Java application using Hibernate to manage a set of entities (e.g., users, orders). Implement basic CRUD operations and demonstrate how to use Hibernate's session and transaction management.
+Summary
+Frontend: Focus on building responsive layouts, interactive features, and using frameworks to manage state and routing.
+Database: Practice SQL queries, design schemas, and integrate databases with Java applications using JDBC or ORM frameworks.
