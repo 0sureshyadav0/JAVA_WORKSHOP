@@ -3,7 +3,6 @@ import java.util.Scanner;
 // Topic: if-else, switch-case, loops(for, while, do-while)
 // Practice: Implement control flow in a number guessing game
 // Assignment: 
-// 6. Create a do-while loop that continues to prompt the user for input until they enter a valid integer.
 // 7. Develop a Java program that uses the break statement to exit from a loop when a specific condition is met.
 // 8. Write a program that uses the continue statement to skip over odd numbers in a loop and print only even numbers.
 public class _3ControlFlow {
@@ -79,5 +78,19 @@ public class _3ControlFlow {
            i++;
         }
         System.out.println(sum);
+    }
+// 6. Create a do-while loop that continues to prompt the user for input until they enter a valid integer.
+    public void validInteger(){
+    
+Scanner input = new Scanner(System.in);
+// int number =9;
+        do{
+            System.out.println("Enter a valid integer:");
+            int number = input.nextInt();
+            if(number<0){
+                break;
+            }
+
+        }while(true);
     }
 }
