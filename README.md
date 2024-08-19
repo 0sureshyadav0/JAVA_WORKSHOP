@@ -1,6 +1,11 @@
 # JAVA_WORKSHOP
 Creating a repository to learn java from beginning to advance along with Data Structures and Algorithms
 
+www.cs.usfca.edu
+visualgo
+boat.ocks.org
+
+
 ## JAVA_FULL_STACK_ROADMAP
 > BACKEND Engineering
 - Basics [Core JAVA Complete]
