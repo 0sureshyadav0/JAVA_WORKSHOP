@@ -19,11 +19,13 @@ public class _4MethodsArrays {
         //     System.out.println(elements);
         // }
         // Selection Sort
-        int[] returnedSelectionSort = selectionSort(arr);
-        for(int elements:returnedSelectionSort){
-        System.out.println(elements);
+        // int[] returnedSelectionSort = selectionSort(arr);
+        // for(int elements:returnedSelectionSort){
+        // System.out.println(elements);
 
-        }
+        // }
+        // Insertion Sort
+        System.out.println(insertionSort(arr));
     }
 
     // public static int min(int[] arr) {
@@ -107,21 +109,45 @@ public class _4MethodsArrays {
     //     return arr;
     // }
     //selectionSort
-    public static int[] selectionSort(int[] array){
-        for(int i=0; i<array.length;i++){
-        int minIndex = i;
-          for(int j=i+1;j<array.length;j++){
-            if(array[j] < array[minIndex])
-            {
+    // Time complexity = O(n^2)
+    // Space complexity = O(1)
+    // public static int[] selectionSort(int[] array){
+    //     for(int i=0; i<array.length;i++){
+    //     int minIndex = i;
+    //       for(int j=i+1;j<array.length;j++){
+    //         if(array[j] < array[minIndex])
+    //         {
              
-             minIndex = j;
-            }
-          }
-          int temp = array[i];
-          array[i] = array[minIndex];
-          array[minIndex] = temp;
-        }
+    //          minIndex = j;
+    //         }
+    //       }
+    //       int temp = array[i];
+    //       array[i] = array[minIndex];
+    //       array[minIndex] = temp;
+    //     }
         
-        return array;
-    }
+    //     return array;
+    // }
+
+    // insertin sort
+    // first part -> sorted array suppose it is arr[0]
+    // second part -> unsorted array from index 1 upto n
+    // {5,8,2,0,3}
+   
+    // public static int[] insertionSort(int[] arr){
+    //     for(int i = 1; i<arr.length; i++){
+    //             int key = arr[i];
+    //             int j = i-1;
+    //             while(key < arr[j] && j>= 0){
+    //                 arr[j+1] = arr[j];
+    //                 j--;
+    //             }
+    //             arr[j+1] = key;
+    //     }
+
+    //     return arr;
+    // }
+
+    // Merge Sort
+    // Quick Sort
 }
