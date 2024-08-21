@@ -6,6 +6,9 @@ package JAVA_170.Week_1;
 public class _4MethodsArrays {
     public static void main(String[] args) {
         int[] arr = { 5, 8, 2, 0, 3 };
+        int start = 0;
+        int end = arr.length -1;
+
         // int minResult = min(arr);
         // int maxResult = max(arr);
         // System.out.println(minResult);
@@ -25,7 +28,13 @@ public class _4MethodsArrays {
 
         // }
         // Insertion Sort
-        System.out.println(insertionSort(arr));
+        // System.out.println(insertionSort(arr));
+
+
+        //Merge Sort
+        
+      mergeSort(arr,start,end);
+
     }
 
     // public static int min(int[] arr) {
@@ -149,5 +158,47 @@ public class _4MethodsArrays {
     // }
 
     // Merge Sort
+    
+int array[] = {4,6,2,6,4};
+void mergeSort(int arr[], int start, int end){
+    int middle = start + (end-start)/2;
+    if(start == end){
+        return;
+    }
+    mergeSort(arr, start, middle);
+    mergeSort(arr, middle +1, end);
+   merge(arr, start, middle, end);
+}
+int[] merge(int arr[], int start, int mid, int end){
+    
+        int temp[];
+        int index=0;
+        while(start <= mid){
+            if(arr[start] < arr[mid+1]){
+                temp[index] = arr[start];
+                index++; start++;
+            }
+            else{
+                temp[index] = arr[mid+1];
+                index++; mid++;
+            }
+        }
+        while(start <= mid){
+            temp[index] = arr[start];
+            index++; start++;
+        }
+        while(mid+1 <= end){
+            temp[index] = arr[end];
+            index++; end++;
+        }
+        index = 0;
+        while(start <= end){
+            arr[index] = temp[start];
+            start++; index++;
+        }
+        return arr;
+    
+}
+
     // Quick Sort
 }
