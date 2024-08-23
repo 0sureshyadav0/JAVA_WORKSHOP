@@ -32,7 +32,24 @@
 // Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
 
  public class TwoSum {
+    public static int[] sum(int[] arr, int target){
+        int[] result={4,6};
+        for(int i=0; i<arr.length; i++){
+            for(int j=i+1; j<arr.length; j++){
+                if(arr[i]+arr[j]==target){
+                   
+                    result[0] = i;
+                    result[1] = j;
+                }
+                
+            }
+        }
+        return arr;
+    }
      public static void main(String[] args) {
-        
+        int[] array = {3,6,8,1,0};
+        int target = 9;
+        int[] result = sum(array, target);
+        System.out.println(result[0]+" "+result[1]+" "+result[2]);
      }
  }
