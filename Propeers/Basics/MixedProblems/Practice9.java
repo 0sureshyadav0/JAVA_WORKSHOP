@@ -40,7 +40,29 @@
 // 1. For an index ‘i’, find where it lands after k swaps.
 // 2. When performing rotation once observe how the positions of all elements change.
 package MixedProblems;
-
+import java.util.*;
 public class Practice9 {
-    
+    public static void rotateArray(int[] arr, int k){
+        int n = arr.length;
+        ArrayList<Integer> copyArr = new ArrayList<Integer>();
+        for(int i = 0; i<k; i++){
+           copyArr.add(arr[i]);
+        }
+        // for(int i=0; i<arr.length-k; i++){
+        //     arr[i] = arr[k];
+        //     k++;
+        // }
+        
+        // for(int i = k+1; i<arr.length; i++){
+        //     arr[i] = copyArr[i];
+        // }
+        for(int value:arr){
+            System.out.println(value);
+        }
+    }
+    public static void main(String[] args) {
+        int[] arr = {4,3,7,8,5};
+        int k = 2;
+        rotateArray(arr,k);
+    }
 }

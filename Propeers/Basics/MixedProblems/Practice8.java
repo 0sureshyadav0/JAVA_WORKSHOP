@@ -44,5 +44,26 @@
 package MixedProblems;
 
 public class Practice8 {
-    
+    public static int[] find(int[] arr){
+        for(int i=0; i<arr.length; i++){
+            for(int j= i; j<arr.length;j++){
+                if(arr[j] > arr[i]){
+                    int temp = arr[i];
+                    arr[i]=arr[j];
+                    arr[j]=temp;
+                }
+            }
+        }
+        int[] ans = {3,4};
+        ans[0] = arr[arr.length -2];
+        ans[1]= arr[1];
+        return ans;
+    }
+    public static void main(String[] args) {
+        int[] arr = {3,6,8,1,9};
+        int[] ans = find(arr);
+        for(int value:ans){
+            System.out.println(value);
+        }
+    }
 }

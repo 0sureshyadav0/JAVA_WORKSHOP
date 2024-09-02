@@ -39,5 +39,13 @@
 package MixedProblems;
 
 public class Practice10 {
-    
+    public static void isPalindrome(String s){
+        String str = s.replaceAll("[^a-zA-Z0-9]","").toLowerCase();
+        int n = str.length();
+        
+    }
+    public static void main(String[] args) {
+        String s ="hello";
+        System.out.println(isPalindrome(s));
+    }
 }

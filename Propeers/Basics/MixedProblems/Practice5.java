@@ -34,5 +34,20 @@
 package MixedProblems;
 
 public class Practice5 {
-    
+    public static int fibonacci(int n){
+        int a = 0;
+        int b = 1;
+int sum =0;
+       for(int i=0; i<n-2; i++){
+         sum = a+b;
+        a=b;
+        b=sum;
+       }
+        return sum;
+    }
+    public static void main(String[] args) {
+        int n = 5;
+        int fib = fibonacci(n);
+        System.out.println(fib);
+    }
 }
